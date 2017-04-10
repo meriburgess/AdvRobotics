@@ -10,11 +10,11 @@ class Publish:
 	def pub_msg(self):
 		# msg = range() --- values?? where do these come from actually??
 		msg = Range()
-		msg.max_range = 200
-		msg.min_range = 0 
 		msg.radiation_type = 1
-		msg.field_of_view = 32
-		msg.range = 200
+		msg.max_range = 0
+		msg.min_range = 0 
+		msg.field_of_view = 0
+		msg.range = random.random()
 		self.publish(msg) 
 
 def main():
